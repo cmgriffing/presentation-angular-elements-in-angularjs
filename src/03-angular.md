@@ -41,12 +41,6 @@ export class WolfComponent implements OnInit {
 ```
 
 <div class="notes">
-You dont have to care too much about everything in here.
-
-- @Inputs are the props we are passing in.
-
-- @Outputs are the events that the WebComponent will emit.
-
 Our WolfComponent takes in a name and avatar image url.
 
 It will emit a revealed event that we have bound to to a click handler.

@@ -57,11 +57,11 @@ The second is the event we dispatch. Consumers can then just attach an event lis
 
 ## Lifecycle Callbacks
 
-- connectedCallback => componentDidMount
+- connectedCallback => ngOnInit
 
-- disconnectedCallback => componentWillUnmount
+- disconnectedCallback => ngOnDestroy
 
-- attributeChangedCallback => componentDidUpdate
+- attributeChangedCallback => ngOnChanges
 
 - adoptedCallback => `¯\_(ツ)_/¯`
 

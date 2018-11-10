@@ -507,6 +507,11 @@ amdefine@>=0.0.4:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
 
+angular-custom-elements@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/angular-custom-elements/-/angular-custom-elements-2.1.0.tgz#a44896e172bf200c5814448703a1a178877f8575"
+  integrity sha1-pEiW4XK/IAxYFESHA6GheId/hXU=
+
 angular-loader@^1.7.5:
   version "1.7.5"
   resolved "https://registry.yarnpkg.com/angular-loader/-/angular-loader-1.7.5.tgz#d830f13ee86a379cc1d1e64e8d4fa1876e5a3ab8"

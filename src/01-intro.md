@@ -1,4 +1,4 @@
-# Angular Elements In React
+# Angular Elements In AngularJS
 
 #
 

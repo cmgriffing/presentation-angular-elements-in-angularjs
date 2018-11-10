@@ -18,6 +18,8 @@
 
 - http://www.thriveafterabuse.com/wp-content/uploads/2015/08/wolf-in-sheeps-clothing.jpg
 
+- https://i.pinimg.com/originals/e9/c4/0e/e9c40ed45f2fc5ee6e5c63829582785b.jpg
+
 ## Ready To Dive in Yourself
 
 <div class="notes">
