@@ -341,7 +341,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2>Caveats</h2>
 <ul>
 <li>Framework overhead (~60kb in this case)</li>
-<li>Inelegant import process</li>
 </ul>
 </section>
 <section id="framework-overhead" class="level2">
@@ -352,28 +351,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><p>A different project with a bit more to it had 160kb. (Angular specific)</p></li>
 <li><p>All numbers are post-gzip.</p></li>
 <li><p>Polyfills are only 2kb total</p></li>
-</ul>
-</aside>
-</section>
-<section id="inelegant-import-process-angular-specific" class="level2">
-<h2>Inelegant Import Process (Angular Specific)</h2>
-<div class="sourceCode" id="cb6"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb6-1" data-line-number="1"><span class="im">import</span> reactify <span class="im">from</span> <span class="st">&#39;skatejs-react-integration&#39;</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb6-2" data-line-number="2"></a>
-<a class="sourceLine" id="cb6-3" data-line-number="3"><span class="kw">const</span> components <span class="op">=</span> <span class="op">{};</span></a>
-<a class="sourceLine" id="cb6-4" data-line-number="4"></a>
-<a class="sourceLine" id="cb6-5" data-line-number="5"><span class="kw">const</span> <span class="op">{</span> meta<span class="op">,</span> elements <span class="op">}</span> <span class="op">=</span> <span class="va">window</span>.<span class="at">myElements</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb6-6" data-line-number="6"></a>
-<a class="sourceLine" id="cb6-7" data-line-number="7"><span class="va">meta</span>.<span class="va">tags</span>.<span class="at">forEach</span>(tag <span class="op">=&gt;</span> <span class="op">{</span></a>
-<a class="sourceLine" id="cb6-8" data-line-number="8">  <span class="kw">const</span> element <span class="op">=</span> elements[tag]<span class="op">;</span></a>
-<a class="sourceLine" id="cb6-9" data-line-number="9">  <span class="kw">const</span> component <span class="op">=</span> <span class="at">reactify</span>(element)<span class="op">;</span></a>
-<a class="sourceLine" id="cb6-10" data-line-number="10">  components[<span class="va">meta</span>.<span class="at">namesByTag</span>[tag]] <span class="op">=</span> component<span class="op">;</span></a>
-<a class="sourceLine" id="cb6-11" data-line-number="11"><span class="op">}</span>)<span class="op">;</span></a>
-<a class="sourceLine" id="cb6-12" data-line-number="12"></a>
-<a class="sourceLine" id="cb6-13" data-line-number="13"><span class="im">export</span> <span class="im">default</span> components<span class="op">;</span></a></code></pre></div>
-<aside class="notes">
-<ul>
-<li><p>window hack because Angular Elements does not expose the constructor functions that reactify needs</p></li>
-<li><p>I could be mistaken</p></li>
 </ul>
 </aside>
 </section>
