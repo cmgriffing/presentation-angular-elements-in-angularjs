@@ -1,7 +1,16 @@
-<p>This is the partial for view 1.</p>
-<ng-wolf
-  avatar="'https://www.fillmurray.com/200/200'"
-  name="'Winston' + index"
-  on-revealed="onRevealed()"
-  ce-one-way
-></ng-wolf>
+<span ng-repeat="isSheep in sheep track by $index">
+  <ng-wolf
+    class="wolf"
+    ng-if="isSheep != true"
+    avatar="{{wolfImage}}"
+    name="'Winston' + $index"
+    on-revealed="saySomething()"
+    ce-one-way
+  ></ng-wolf>
+  <div class="sheep" ng-if="isSheep == true">
+    <img
+      ng-src={{sheepImage}}
+      ng-click="saySomething($event)"
+    />
+  </div>
+</span>

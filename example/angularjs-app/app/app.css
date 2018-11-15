@@ -23,3 +23,13 @@
   content: "|";
   padding-right: 0.3em;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.wolf, .sheep {
+  width: 200px;
+  display: inline-block;
+}

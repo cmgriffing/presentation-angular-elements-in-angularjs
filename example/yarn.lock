@@ -510,7 +510,6 @@ amdefine@>=0.0.4:
 angular-custom-elements@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/angular-custom-elements/-/angular-custom-elements-2.1.0.tgz#a44896e172bf200c5814448703a1a178877f8575"
-  integrity sha1-pEiW4XK/IAxYFESHA6GheId/hXU=
 
 angular-loader@^1.7.5:
   version "1.7.5"
